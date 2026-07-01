@@ -52,4 +52,3 @@ public partial class GuidesTabs : UserControl
 			vm.ShowHeroesCommand?.Execute(null);
 	}
 }
-
