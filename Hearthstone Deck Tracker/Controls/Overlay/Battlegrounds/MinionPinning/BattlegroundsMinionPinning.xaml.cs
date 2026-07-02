@@ -179,13 +179,13 @@ public partial class BattlegroundsMinionPinning : INotifyPropertyChanged
 			DismissGuide();
 	}
 
-	private void BtnGotIt_Click(object sender, MouseButtonEventArgs e)
+	private void BtnGotIt_Click(object sender, RoutedEventArgs e)
 	{
 		DismissGuide();
 		Core.Game.Metrics.TavernMarkersQuickGuideDismissed = true;
 	}
 
-	private void BtnCompGuidesMarkerGotIt_Click(object sender, MouseButtonEventArgs e)
+	private void BtnCompGuidesMarkerGotIt_Click(object sender, RoutedEventArgs e)
 	{
 		DismissCompGuidesMarkerQuickGuide();
 		IsQuickCompGuideVisible = false;
@@ -207,7 +207,7 @@ public partial class BattlegroundsMinionPinning : INotifyPropertyChanged
 		}
 	}
 
-	private void BtnAutoEnableYes_Click(object sender, MouseButtonEventArgs e)
+	private void BtnAutoEnableYes_Click(object sender, RoutedEventArgs e)
 	{
 		ConfigWrapper.AutoEnableTavernMarkersRecommended = true;
 		ConfigWrapper.DismissedAutoEnablePopup = true;
@@ -215,7 +215,7 @@ public partial class BattlegroundsMinionPinning : INotifyPropertyChanged
 		Core.Game.Metrics.TavernMarkersAutoEnableResponse = "yes";
 	}
 
-	private void BtnAutoEnableNo_Click(object sender, MouseButtonEventArgs e)
+	private void BtnAutoEnableNo_Click(object sender, RoutedEventArgs e)
 	{
 		ConfigWrapper.AutoEnableTavernMarkersRecommended = false;
 		ConfigWrapper.DismissedAutoEnablePopup = true;
