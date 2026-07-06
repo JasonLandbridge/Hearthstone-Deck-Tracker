@@ -50,7 +50,7 @@
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <battlegrounds:OverlayButton
-                            Command="{Binding DataContext.SetActiveKeywordCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                            Command="{Binding SetActiveKeywordCommand, RelativeSource={RelativeSource AncestorType=local:BattlegroundsMinionsExtraFilters}}"
                             CommandParameter="{Binding Keyword}"
                             Cursor="Hand"
                             Height="30"
